@@ -1,0 +1,22 @@
+.main-container h3 {
+    text-align: left;
+    font-size: 2em;
+}
+
+li img {
+    height: 25px;
+    width: 25px;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+label {
+    display: inline-block;
+    width:280px;
+}
+
+footer {
+    
+}
