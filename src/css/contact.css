@@ -1,4 +1,5 @@
 .main-container h3 {
+    margin: 0;
     text-align: left;
     font-size: 2em;
 }
@@ -17,6 +18,6 @@ label {
     width:280px;
 }
 
-footer {
-    
+.contacts {
+    margin-top: 4em;
 }

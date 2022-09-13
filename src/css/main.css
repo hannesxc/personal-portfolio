@@ -25,6 +25,7 @@ h2 {
 
 h3 {
     margin: 0 auto;
+    text-align: center;
     font-size: 1.4em;
     font-weight: 125;
     letter-spacing: 0.005em;
@@ -64,7 +65,7 @@ header {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    left: 0;
+    right: 0;
 }
 
 .nav-item {
@@ -87,8 +88,23 @@ header {
     text-decoration: none;
 }
 
-.nav-item {
+.active {
+    background-color: rgb(53, 185, 124);
+}
+
+.active .nav-item {
     display: block;
+}
+
+.active .nav-item:hover{
+    background-color: #224b3a;
+}
+.toggle {
+    padding: 1.1em;
+}
+
+.toggle i {
+    font-size: 2em;
 }
 
 .green {
@@ -138,6 +154,10 @@ section .hyperlink:hover {
     letter-spacing: 0.025em;
 }
 
+footer {
+    margin-bottom: 1em;
+}
+
 #footer a {
     font-size: 0.8rem;
     color: #fff;
@@ -170,8 +190,9 @@ section .hyperlink:hover {
     }
     h3 {
         font-size: 2em;
+        text-align: left;
     }
-    .navbar {
+    .nav {
         display: flex;
         text-align: center;
         justify-content: space-between;
@@ -195,5 +216,8 @@ section .hyperlink:hover {
         width: fit-content;
         width: -moz-fit-content;
         color: #FFFFFF;
+    }
+    .toggle {
+        display: none;
     }
 }
