@@ -4,6 +4,10 @@
     font-size: 2em;
 }
 
+a:hover {
+    color: #b66767;
+}
+
 li img {
     height: 25px;
     width: 25px;
