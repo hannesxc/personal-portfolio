@@ -25,3 +25,13 @@ label {
 .contacts {
     margin-top: 4em;
 }
+
+@media only screen and (max-width: 768px) {
+    label {
+        display: none;
+    }
+
+    li a {
+        margin-left: 1em;
+    }
+}
