@@ -1,5 +1,5 @@
 // Change background images at a certain interval.
-window.onload = function () {
+/*window.onload = function () {
     document.body.style.background = "url('assets/images/body/background.jpg')";
     var rndImages = [
         "assets/images/body/background.jpg",
@@ -25,7 +25,7 @@ window.onload = function () {
             i = 0;
         }
     }, 3000);
-}
+}*/
 
 // Hamburger icon thingy for mobile devices
 const toggle = document.querySelector(".toggle");
