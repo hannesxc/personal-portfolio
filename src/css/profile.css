@@ -1,19 +1,38 @@
+h3 {
+    opacity: 0;
+    transition: all 1.5s ;
+}
+
 h4, h5 {
     font-weight: 700;
     letter-spacing: 0.05em;
+}
+
+h5 {
+    font-size: 16px;
 }
 
 .date {
     font-style: italic;
 }
 
-.education-experience-container h3 {
+.education-container h3 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.education-experience-card {
+.card {
     margin-top: 25px;
+    opacity: 0;
+    filter: blur(5s);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.showElem {
+    opacity: 1;
+    transform: translateX(0%);
+    filter: blur(5s);
 }
 
 .card-info p {
@@ -30,7 +49,7 @@ h4, h5 {
 
 .card-description p::before {
     content: ">\A0";
-    color: rgb(53, 185, 124);
+    color: rgb(148, 148, 148);
     font-weight: 700;
 }
 
@@ -38,7 +57,7 @@ h4, h5 {
     margin-top: 10px;
 }
 
-.tech-stack-container {
+.stack-container {
     margin: 50px auto 0 auto;
     max-width: 1000px;
     display: flex;
@@ -51,7 +70,7 @@ h4, h5 {
 .skill {
     border-radius: 12px;
     margin: 10px;
-    border: 2px solid rgb(53, 185, 124);
+    border: 2px solid rgb(163, 163, 163);
     padding: 8px 10px;
     display: flex;
     align-items: center;
@@ -62,13 +81,57 @@ h4, h5 {
     margin-left: 10px;
 }
 
+.skill:nth-child(1) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(2) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(3) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(4) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(5) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(6) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(7) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(8) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(9) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(10) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(11) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(12) {
+    transition-delay: 400ms;
+}
+.skill:nth-child(13) {
+    transition-delay: 400ms;
+}
+
+.disable-transitions {
+    transition: none;
+}
+
 @media only screen and (min-width: 768px) {
-    #education-experience {
+    #education-section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .education-experience-container {
+    .education-container {
         margin-top: -50px;
         width: 48%;
     }
@@ -78,7 +141,7 @@ h4, h5 {
 }
 
 @media only screen and (min-width: 1100px) {
-    .education-experience-card {
+    .card {
         display: flex;
         justify-content: space-between;
     }
