@@ -11,7 +11,6 @@ body {
     background: url("/assets/images/body/background.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -31,6 +30,8 @@ h3 {
     font-size: 1.4em;
     font-weight: 125;
     letter-spacing: 0.005em;
+    opacity: 0;
+    transition: all 1.5s ;
 }
 
 a, span {
@@ -85,21 +86,21 @@ a, span {
     color: #1D263B;
 }
 
-.nav-item a:hover, .nav-item a:focus {
+.nav-item a:hover, .nav-item a:focus, .header-1:hover {
     color: #b66767;
     text-decoration: none;
 }
 
 .active {
-    background-color: rgb(53, 185, 124);
+    background-color:grey;
 }
 
 .active .nav-item {
     display: block;
 }
 
-.active .nav-item:hover{
-    background-color: #224b3a;
+.active .nav-item:hover {
+    background-color: #0d0e0d;
 }
 
 .toggle {
@@ -120,6 +121,27 @@ a, span {
 
 ul {
     list-style-type: none;
+}
+
+.card {
+    margin-top: 25px;
+    opacity: 0;
+    filter: blur(5s);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.stacked .card:nth-child(1) {
+    transition: 500ms;
+}
+.stacked .card:nth-child(2) {
+    transition: 450ms;
+}
+
+.showElem {
+    opacity: 1;
+    transform: translateX(0%);
+    filter: blur(5s);
 }
 
 .stacked {

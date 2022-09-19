@@ -33,13 +33,15 @@ const menu = document.querySelector(".nav-menu");
 function toggleMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
-
+        // restore content on page
+        document.getElementById("mainframe").style.display = "inherit";
         // add hamburger icon
         toggle.innerHTML = `<i class="fas fa-bars">`;
     }
     else {
         menu.classList.add("active");
-
+        // remove content off page
+        document.getElementById("mainframe").style.display = "none";
         // add X icon
         toggle.innerHTML = `<i class="fas fa-times"></i>`;
     }
@@ -62,6 +64,8 @@ const hiddenElem1 = document.querySelectorAll("h3");
 const hiddenElem = document.querySelectorAll(".card");
 hiddenElem.forEach((el) => observer.observe(el));
 hiddenElem1.forEach((el) => observer.observe(el));
+
+
 
 // Current year on footer
 let mydate = document.querySelector("#datenow");
