@@ -167,17 +167,16 @@ section {
     padding-top: 8vh;
 }
 
-.footer {
-    margin: 0 auto;
-    margin-top: 4.5em;
-    text-align: center;
-    margin-bottom: 1em;
+.main2 {
+    min-height: calc(100vh - 130px);
 }
 
-.footer2 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.footer {
+    margin: 0 auto;
+    margin-top: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    height: 30px;
 }
 
 .footer a {
