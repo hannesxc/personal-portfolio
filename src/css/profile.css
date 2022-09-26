@@ -39,7 +39,9 @@ h5 {
 }
 
 .stack-container {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
