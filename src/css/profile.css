@@ -30,7 +30,7 @@ h5 {
 
 .card-description p::before {
     content: ">\A0";
-    color: rgb(37, 37, 37);
+    color: rgb(114, 114, 114);
     font-weight: 700;
 }
 
@@ -109,6 +109,9 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+    .card-description p::before {
+        color: rgb(37,37,37);
+    }
     #education-section {
         display: flex;
         flex-direction: row;

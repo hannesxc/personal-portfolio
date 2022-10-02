@@ -8,13 +8,13 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background: url("/assets/images/body/background.jpg") no-repeat center center fixed;
+    background: url("/assets/images/body/background.jpg") no-repeat fixed;
     background-size: cover;
 }
 
@@ -108,7 +108,7 @@ a, span {
 }
 
 .active .nav-item a:hover {
-    color: #7a7a7a
+    color: #7a7a7a;
 }
 
 .toggle {
