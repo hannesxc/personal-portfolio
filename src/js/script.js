@@ -36,7 +36,7 @@ function toggleMenu() {
         // restore content on page
         document.getElementById("mainframe").style.display = "inherit";
         // add hamburger icon
-        toggle.innerHTML = `<i class="fas fa-bars">`;
+        toggle.innerHTML = `<i class="fas fa-bars"></i>`;
     }
     else {
         menu.classList.add("active");
