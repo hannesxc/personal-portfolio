@@ -1,0 +1,42 @@
+.projects_title{
+    margin: 50px 0;
+}
+
+.projects_grid{
+    display: grid;
+    margin: 70px 0;
+    gap: 20px;
+    row-gap: 50px;
+}
+
+.project{
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.project_title{
+    margin-top: 10px;
+}
+.project_links{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+.project_link img{
+    height: 25px;
+}
+
+.project_image{
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+
+@media (min-width: 1024px) {
+    .projects_grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
