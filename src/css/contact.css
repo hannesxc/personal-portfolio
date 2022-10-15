@@ -4,17 +4,32 @@
     font-size: 2em;
 }
 
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 a:hover {
     color: #000000;
 }
 
 li img {
-    height: 25px;
+    height: 23px;
     width: 25px;
+    margin-right: 10px;
 }
 
 li {
     margin-bottom: 1em;
+    display: flex;
+}
+
+section:nth-child(1), section:nth-child(2), section:nth-child(3) {
+    flex-grow: 1;
+}
+
+section:nth-child(2) {
+    padding-right: 30px;
 }
 
 .card:nth-child(1) {
@@ -44,16 +59,76 @@ label {
     width:280px;
 }
 
-.contacts {
+.contacts, #my-form {
     margin-top: 4em;
 }
 
+#my-form {
+    background-color: rgb(99, 112, 126);
+    border-radius: 15px;
+    padding: 20px;
+    width: 430px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-form p  {
+    margin-top: 5px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+#my-form label {
+    padding: 20px 5px;
+}
+
+input {
+    background-color: rgb(250, 242, 232);
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+}
+
+button {
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+    padding: 12px;
+    background-color: rgb(250, 242, 232);
+    border-radius: 10px;
+    color: black;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
 @media only screen and (max-width: 768px) {
-    label {
+    .invis {
         display: none;
     }
-
     li a {
         margin-left: 1em;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .main-container h3 {
+        text-align: center;
+    }
+    section:nth-child(3) {
+        margin-bottom: 60px;
     }
 }

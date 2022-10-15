@@ -65,9 +65,33 @@ const hiddenElem = document.querySelectorAll(".card");
 hiddenElem.forEach((el) => observer.observe(el));
 hiddenElem1.forEach((el) => observer.observe(el));
 
-
-
-// Current year on footer
-let mydate = document.querySelector("#datenow");
-const var1 = new Date().getFullYear();
-mydate.innerHTML = var1;
+// Handle form submission
+var form = document.getElementById("my-form");
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            status.innerHTML = "Thanks, I'll get back to ya soon!";
+            form.reset()
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form";
+                }
+            })
+        }
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+    });
+}
+form.addEventListener("submit", handleSubmit, false);

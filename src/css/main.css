@@ -14,7 +14,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background: url("/assets/images/body/background.jpg") no-repeat fixed;
+    background: url("/assets/images/body/background.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -96,7 +96,7 @@ a, span {
 }
 
 .active {
-    background-color:grey;
+    background-color: grey;
 }
 
 .active .nav-item {

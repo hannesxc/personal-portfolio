@@ -1,105 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Projects - Aditya Chakravorty</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/css/main.css">
+        <link rel="stylesheet" href="./src/css/project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-<head>
-    <title>Projects - Aditya Chakravorty</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/project.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-</head>
-
-<body>
-    <div class="main2">
-        <header class="header">
-            <a href="./index.html" class="header-1">@hannesc</a>
-            <nav class="navbar">
-                <div class="toggle"><i class="fas fa-bars"></i></div>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="./profile.html">Profile</a></li>
-                    <li class="nav-item"><a href="./src/resume/AdityaChakravortyCV.pdf">Resume</a></li>
-                    <li class="nav-item"><a href="./projects.html">Projects</a></li>
-                    <li class="nav-item"><a href="./contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="projects main-container" id="projects">
-
-            <h3 class="projects_title">Projects</h3>
-
-            <div class="projects_grid">
-
-                <div class="project">
-                    <img src="https://via.placeholder.com/600x400" alt="" class="project_image">
-                    <h4 class="project_title">Flipkart Demo</h4>
-                    <div class="project_links">
-                        <a class="project_link" href="https://hannesc.me/flipkart-demo-site/">
-                            <img src="./assets/images/socials/link.svg" alt="Link">
-                        </a>
-                        <a class="project_link" href="https://github.com/hannesxc/flipkart-demo-site">
-                            <img src="./assets/images/socials/github-icon.svg" alt="Github">
-                        </a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    </head>
+    <body>
+        <div class="main2">
+            <header class="header">
+                <a href="./index.html" class="header-1">@hannesc</a>
+                <nav class="navbar">
+                    <div class="toggle"><i class="fas fa-bars"></i></div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="./profile.html">Profile</a></li>
+                        <li class="nav-item"><a href="./src/resume/AdityaChakravortyCV.pdf">Resume</a></li>
+                        <li class="nav-item"><a href="./projects.html">Projects</a></li>
+                        <li class="nav-item"><a href="./contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="main-container" id="mainframe">
+                <h3 class="projects_title">Projects</h3>
+                <main>
+                    <div class="card">
+                        <div class="inner">
+                            <h2 class="title">DownpourChat (WIP)</h2>
+                            <p class="subtitle">Private E2EE chatting application (rooms) with downloadable
+                                transcripts of your conversation in JSON format. All data is flushed on session
+                                termination from our backend.</p>
+                                <div class="group">
+                                    <a href="https://hannesc.me/downpour-chat/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                    <a href="https://github.com/hannesxc/downpour-chat" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                                </div>
+                                <p class="outer">ReactJS, SocketIO, NodeJS, ExpressJS, Redis</p>
+                        </div>
+                    </div>  
+                    <div class="card card2">
+                        <div class="inner">
+                            <h2 class="title">Artificial-Me</h2>
+                            <p class="subtitle">My first AI curated chatbot (Anna) made with IBM Watson AI, integrated with a
+                                shell-ish look website which serves as a partial portfolio cum chatbot showcase.</p>
+                            <div class="group">
+                                <a href="https://hannesc.me/artificial-me-chatbot/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                <a href="https://github.com/hannesxc/artificial-me-chatbot" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                            </div>
+                            <p class="outer">ReactJS, CSS, IBM Watson AI</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project">
-                    <img src="https://via.placeholder.com/600x400" alt="" class="project_image">
-                    <h4 class="project_title">Simple Interest Calculator</h4>
-                    <div class="project_links">
-                        <a class="project_link" href="https://hannesc.me/Simple-Interest-Calculator/">
-                            <img src="./assets/images/socials/link.svg" alt="Link">
-                        </a>
-                        <a class="project_link" href="https://github.com/hannesxc/Simple-Interest-Calculator">
-                            <img src="./assets/images/socials/github-icon.svg" alt="Github">
-                        </a>
+                    <div class="card card3">
+                        <div class="inner">
+                            <h2 class="title">To-Do V2</h2>
+                            <p class="subtitle">Normal to-do app, except it doesn’t really delete completed entries, but archives them
+                                for a future note. Along with authentication and backend integration, for data retention, and a seamless
+                                experience!</p>
+                            <div class="group">
+                                <a href="https://hannesc.me/to-do-list/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                <a href="https://github.com/hannesxc/to-do-list" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                            </div>
+                            <p class="outer">ReactJS, React-Router, CSS, OAuth2, Firebase</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="project">
-                    <img src="https://via.placeholder.com/600x400" alt="" class="project_image">
-                    <h4 class="project_title">eCommerce Store</h4>
-                    <div class="project_links">
-                        <a class="project_link" href="https://hannesc.me/Simple-Interest-Calculator/">
-                            <img src="./assets/images/socials/link.svg" alt="Link">
-                        </a>
-                        <a class="project_link" href="https://github.com/hannesxc/ecommerce-store">
-                            <img src="./assets/images/socials/github-icon.svg" alt="Github">
-                        </a>
+                    <div class="card card4">
+                        <div class="inner">
+                            <h2 class="title">Weatherify</h2>
+                            <p class="subtitle">Check for current, max/min temps, wind, conditions, etc wherever you live.
+                                Integrated with openweathermap's API to always fetch the latest and most
+                                accurate info available. Only works for US/EU cities.</p>
+                            <div class="group">
+                                <a href="https://hannesc.me/weatherify" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                <a href="https://github.com/hannesxc/weatherify" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                            </div>
+                            <p class="outer">ReactJS, Axios, CSS, OpenWeatherMap API</p>
+                        </div>
                     </div>
-                </div>
-
+                    <div class="card card5">
+                        <div class="inner">
+                            <h2 class="title">Hannes & Co.</h2>
+                            <p class="subtitle">Fictitious e-commerce clothing store named Hannes&Co. made to showcase my frontend skills. No
+                                backend integration had been done, would probably do it at a later point.</p>
+                                <div class="group">
+                                    <a href="https://hannesc.me/ecommerce-store/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                    <a href="https://github.com/hannesxc/ecommerce-store" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                                </div>
+                            <p class="outer">HTML, CSS, Javascript</p>
+                        </div>
+                    </div>
+                    <div class="card card6">
+                        <div class="inner">
+                            <h2 class="title">Personal-Portfolio</h2>
+                            <p class="subtitle">Made a minimalistic, responsive and lightweight portfolio site for my own site content, to
+                                showcase my certifications, courses, education, projects, etc</p>
+                            <div class="group">
+                                <a href="https://adityach.xyz/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                <a href="https://github.com/hannesxc/personal-portfolio" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                            </div>
+                            <p class="outer">HTML, CSS, Javascript</p>
+                        </div>
+                    </div>
+                    <div class="card card7">
+                        <div class="inner">
+                            <h2 class="title">Flipcrackt</h2>
+                            <p class="subtitle">Flipkart Demo. NOT mobile responsive, unpolished and doesn't have placeholder images - was on 
+                                its very early stages when I stopped working on it.</p>
+                            <div class="group">
+                                <a href="https://hannesc.me/flipkart-demo-site/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                <a href="https://github.com/hannesxc/flipkart-demo-site" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                            </div>
+                            <p class="outer">HTML, CSS, Javascript</p>
+                        </div>
+                    </div>
+                    <div class="card card8">
+                        <div class="inner">
+                            <h2 class="title">Calculator(w/ SI & CI)</h2>
+                            <p class="subtitle">One of my very first projects, basic calculator along with simple interest and 
+                                compound interest calculators. </p>
+                            <div class="group">
+                                <a href="https://hannesc.me/calculator/" target="_blank"><img src="./assets/images/socials/link.svg" alt="external" /></a>
+                                <a href="https://github.com/hannesxc/calculator" target="_blank"><img src="./assets/images/socials/github.svg" alt="github" /></a>
+                            </div>    
+                            <p class="outer">HTML, CSS, Javascript</p>
+                        </div>
+                    </div>
+                  <main>
             </div>
-
         </div>
-
-
-
-    </div>
-    <footer class="footer">
-        <!-- Social links -->
-        <div class="social">
-            <a href="https://www.facebook.com/aditya.chakravorty.18" target="_blank"><img
-                    src="./assets/images/socials/facebook-icon.svg" alt="Facebook" /></a>
-            <a href="https://www.linkedin.com/in/aditya-chakravorty/" target="_blank"><img
-                    src="./assets/images/socials/linkedin-icon.svg" alt="Linkedin" /></a>
-            <a href="https://github.com/hannesxc" target="_blank"><img src="./assets/images/socials/github-icon.svg"
-                    alt="GitHub" /></a>
-            <a href="mailto:chakravortyaditya@gmail.com"><img src="./assets/images/socials/email-icon.svg"
-                    alt="Email" /></a>
-            <a href="https://www.credly.com/users/aditya-chakravorty" target="_blank"><img
-                    src="./assets/images/socials/cert-icon.svg" alt="Credly" /></a>
-        </div>
-        <p>Copyright &copy; Aditya Chakravorty (HannesC) <span id="datenow"></span>, All Rights Reserved.</p>
-    </footer>
-    <script src="./src/js/script.js"></script>
-</body>
-
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.facebook.com/aditya.chakravorty.18" target="_blank"><img src="./assets/images/socials/facebook-icon.svg" alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/in/aditya-chakravorty/" target="_blank"><img src="./assets/images/socials/linkedin-icon.svg" alt="Linkedin" /></a>
+                <a href="https://github.com/hannesxc" target="_blank"><img src="./assets/images/socials/github-icon.svg" alt="GitHub" /></a>
+                <a href="mailto:chakravortyaditya@gmail.com"><img src="./assets/images/socials/email-icon.svg" alt="Email" /></a>
+                <a href="https://www.credly.com/users/aditya-chakravorty" target="_blank"><img src="./assets/images/socials/cert-icon.svg" alt="Credly" /></a>
+            </div>
+            <p>Copyright &copy; Aditya Chakravorty (HannesC) <span id="datenow"></span>, All Rights Reserved.</p>
+        </footer>
+        <script src="./src/js/script.js"></script>
+    </body>
 </html>
