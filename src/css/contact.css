@@ -64,10 +64,10 @@ label {
 }
 
 #my-form {
-    background-color: rgb(99, 112, 126);
+    background-color: rgb(57, 68, 80);
     border-radius: 15px;
     padding: 20px;
-    width: 430px;
+    max-width: 450px;
     height: 352px;
     display: flex;
     flex-direction: column;
@@ -124,11 +124,15 @@ button:hover {
 @media only screen and (max-width: 1060px) {
     .main-container{
         flex-direction: column;
+        padding: 0;
     }
     .main-container h3 {
         text-align: center;
     }
     section:nth-child(3) {
         margin-bottom: 60px;
+    }
+    section:nth-child(2) {
+        padding-right: 0;
     }
 }

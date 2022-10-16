@@ -42,6 +42,10 @@ main {
     padding: 10px;
 }
 
+.group a:hover {
+    opacity: 0.6;
+}
+
 .outer {
     margin-top: 30px;
     padding: 5px;
