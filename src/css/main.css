@@ -113,6 +113,7 @@ a, span {
 
 .toggle {
     padding: 1.1em;
+    cursor: pointer;
 }
 
 .toggle i {

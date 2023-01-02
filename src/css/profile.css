@@ -1,3 +1,7 @@
+h3 {
+    font-size: 1.7em;
+}
+
 h4, h5 {
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -14,6 +18,10 @@ h5 {
 .education-container h3 {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#education-section {
+    padding-top: 0;
 }
 
 .card-info p {
@@ -69,6 +77,9 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 2em;
+    }
     .card-description p::before {
         color: rgb(37,37,37);
     }
@@ -76,6 +87,7 @@ h5 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 80px;
     }
     .education-container {
         margin-top: -50px;

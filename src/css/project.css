@@ -15,6 +15,10 @@ main {
     margin: 0 auto;
 }
 
+h3 {
+    font-size: 1.7em;
+}
+
 .card {
     height: 400px;
     position: relative;
@@ -25,7 +29,6 @@ main {
     text-decoration: none;
     border: 2px solid lightgray;
     margin-bottom: 20px;
-    background-image: url("/assets/images/projects/unknown8.webp");
     background-size: cover;
 }
 
@@ -78,6 +81,18 @@ main {
     text-align: center;
 }
 
+.card10 {
+    background-image: url("/assets/images/projects/unknown10.webp");
+}
+
+.card9 {
+    background-image: url("/assets/images/projects/unknown9.webp");
+}
+
+.card1 {
+    background-image: url("/assets/images/projects/unknown8.webp");
+}
+
 .card2 {
     background-image: url("/assets/images/projects/unknown7.webp");
 }
@@ -111,6 +126,9 @@ main {
 }
 
 @media (min-width: 768px) {
+    h3 {
+        font-size: 2em;
+    }
     .card {
         height: 500px;
     }
