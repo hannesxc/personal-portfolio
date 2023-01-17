@@ -81,46 +81,6 @@ h3 {
     text-align: center;
 }
 
-.card10 {
-    background-image: url("/assets/images/projects/unknown10.webp");
-}
-
-.card9 {
-    background-image: url("/assets/images/projects/unknown9.webp");
-}
-
-.card1 {
-    background-image: url("/assets/images/projects/unknown8.webp");
-}
-
-.card2 {
-    background-image: url("/assets/images/projects/unknown7.webp");
-}
-
-.card3 {
-    background-image: url("/assets/images/projects/unknown6.webp");
-}
-
-.card4 {
-    background-image: url("/assets/images/projects/unknown5.webp");
-}
-
-.card5 {
-    background-image: url("/assets/images/projects/unknown4.webp");
-}
-
-.card6 {
-    background-image: url("/assets/images/projects/unknown3.webp");
-}
-
-.card7 {
-    background-image: url("/assets/images/projects/unknown2.webp");
-}
-
-.card8 {
-    background-image: url("/assets/images/projects/unknown.webp");
-}
-
 .card:nth-child(8)  {
     margin-bottom: 40px;
 }
