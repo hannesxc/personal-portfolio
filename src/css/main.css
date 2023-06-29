@@ -83,7 +83,6 @@ a, span {
 .nav-item a {
     display: block;
     padding: 18px;
-    border-bottom: 1px solid rgb(105, 105, 105);
     font-weight: 700;
     width: 100vw;
     letter-spacing: 0.1em;
@@ -106,6 +105,10 @@ a, span {
 
 .active .nav-item:hover {
     background-color: #0d0e0d;
+}
+
+.active .nav-item a {
+    border-bottom: 1px solid rgb(105, 105, 105);
 }
 
 .active .nav-item a:hover {
